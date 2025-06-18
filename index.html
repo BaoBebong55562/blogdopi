@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Dopi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div>
+        <h1>📝 Blog Dopi</h1>
+        <p class="tagline">Chia sẻ kiến thức tài chính & kinh doanh</p>
+      </div>
+      <button id="darkModeToggle">🌙 Dark Mode</button>
+       <input type="text" id="searchInput" placeholder="🔍 Tìm bài viết..." />
+      <select id="filterSelect">
+        <option value="all">Tất cả</option>
+        <option value="tài chính">Tài chính</option>
+        <option value="bất động sản">Bất động sản</option>
+        <option value="quy hoạch đô thị">Đô thị</option>
+      </select>
+      <span id="clock">🕒 --:--</span>
+    </div>
+  </header>
+  <div class="top-banner">
+  <marquee behavior="scroll" direction="left" scrollamount="5">
+    👋 Chào mừng bạn đã đến với blog của mình! Mời bạn tham khảo và chắt lọc thông tin. Các nội dung trên blog chỉ mang tính chất tham khảo.
+  </marquee>
+</div>
+  <div class="social-fixed">
+  <a href="https://facebook.com" target="_blank" class="shake">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://zalo.me" target="_blank" class="shake">
+    <i class="fas fa-comment-dots"></i>
+  </a>
+  <a href="viber://chat" target="_blank" class="shake">
+    <i class="fab fa-viber"></i>
+  </a>
+</div>
+  <main id="posts-container"></main>
+  <footer>
+  <p>© 2025 Nguyễn Hồ Gia Bảo. All rights reserved.</p>
+</footer>
+  <script src="posts.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
